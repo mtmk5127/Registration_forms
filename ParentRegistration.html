@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>ParentForm</title>
+   <meta charset="utf-8">
+   <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+   
+<!-- Optional theme -->
+   <link href="css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous"> 
+  
+   
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script src="scripts/main.js"></script>
+</head>
+
+
+<body>
+<div class="container">
+<div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+            <a href="#step-1" type="button" class="btn btn-primary btn-circle" title="step-1">1</a>
+            <p>Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled" title="step-2">2</a>
+            <p>Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled" title="step-3">3</a>
+            <p>Step 3</p>
+        </div>
+    </div>
+</div>
+<form role="form">
+    <div class="row setup-content" id="step-1">
+	    <h3> Step 1</h3>
+             <label for="firstName" class="control-label">Name:</label>
+					 <div class="row ">
+					    <div class="col-md-6">
+						   <input type="text" class="form-control" id="firstName" placeholder="First name" />
+						</div>
+						
+					</div>
+					<br>
+					<div class="row ">
+					   <div class="col-md-6">
+						    <input type="text" class="form-control" id="lastName" placeholder="Last name" />
+						</div>
+					</div>
+				
+				
+					<br>
+				
+				
+				<div class="row">
+				     <div class="col-md-6">
+					    <label for="email" class="control-label">Email Address:</label>
+						<input type="text" class="form-control" id="email" placeholder="Email Address" />
+					</div>
+				</div>
+<br>			
+
+	               <div class="row">
+				     <div class="col-md-6">
+					     <label for="studentname" class="control-label">Student Name:</label>
+						 <input type="text" class="form-control" id="studentname" placeholder="Student Name" />
+						</div>
+					</div>	
+					
+					
+    
+                    
+					
+					<br>
+                	<div class="row">
+				     					
+					<div class="col-md-6">
+					     <label for="relationship" class="control-label">Relationship with student:</label>
+						 <select id="relationship" class="form-control">
+						      <option value="father">Father</option>
+							  <option value="Mother">Mother</option>
+							  <option value="guardian">Guardian</option>
+						</select>
+				        </div>
+				</div>
+				
+				
+					
+					<br>
+				<div class="row">
+					<div class="col-md-6">
+					     <label for="gender" class="control-label">Gender:</label>
+						 <select id="gender" class="form-control">
+						      <option value="male">Male</option>
+							  <option value="female" selected="selected">Female</option>
+						</select>
+					</div>
+				</div>
+                
+				<br>
+				
+				<div class="form-group row">
+               <label for="example-date-input" class="col-xs-2 col-form-label">Date of Birth:</label>
+               <div class="col-xs-4">
+              <input class="form-control" type="date"  id="example-date-input" placeholder="yyyy-mm-dd">
+             </div>
+              </div>
+				
+
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+            
+    </div>
+    <div class="row setup-content" id="step-2">
+        <h3> Step 2</h3>
+		<div class="row ">
+					   <div class="col-md-6">
+					     <label for="address1" class="control-label">Address:</label>
+					     <input type="text" class="form-control" id="address1" placeholder="Address line 1" />
+						</div>
+					</div>
+				<div class="row ">
+				      <div class="col-md-6">
+					    <input type="text" class="form-control " id="address2" placeholder="Address line 2" />
+					  </div>
+				</div>
+				
+				<div class="row ">
+				    <div class="col-md-6">
+					    <label for="city" class="control-label">City:</label>
+					    <input type="text" class="form-control" id="city" placeholder="your city" />
+					</div>
+					</div>
+					
+					<div class="row">
+					<div class="col-md-6">
+					   <label for="stateorregion" class="control-label">State / Region:</label>
+					   <input type="text" class="form-control" id="stateorregion" placeholder="your state / region" />
+					</div>
+				</div>
+				
+				<div class="row">
+				     <div class="col-md-6">
+					    <label for="zipcode" class="control-label">Zipcode:</label>
+						<input type="text" class="form-control" id="zipcode" placeholder="zipcode" />
+					</div>
+					</div>
+					
+					<div class="row">
+					<div class="col-md-6">
+					     <label for="country" class="control-label">Country:</label>
+						 <select id="country" class="form-control">
+						      <option value="usa">USA</option>
+							  <option value="uk" selected="selected">UK</option>
+							  <option value="australia">Australia</option>
+						</select>
+					</div>
+				</div>
+				
+					
+				<div class="row">
+				     <div class="col-md-6">
+					     <label for="contactno" class="control-label">Contact No:</label>
+						 <input type="text" class="form-control" id="contactno" placeholder="contactno" />
+					</div>
+				</div>
+				<br>
+				<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+		
+    </div>
+	
+	
+    <div class="row setup-content" id="step-3">
+        <h3> Step 3</h3>
+		<div class="row">
+				     <div class="col-md-6">
+					     <label for="username" class="control-label">Username:</label>
+						 <input type="username" class="form-control" id="username" placeholder="username" />
+					</div>
+				</div>	 
+
+				<div class="row">
+				     <div class="col-md-6">
+					     <label for="password" class="control-label">Password:</label>
+						 <input type="password" class="form-control" id="password" placeholder="password" />
+					</div>
+					</div>
+				<div class="row">	
+					<div class="col-md-6">
+					     <label for="confirmpassword" class="control-label">Confirm Password:</label>
+						 <input type="password" class="form-control" id="confirmpassword" placeholder="re enter password" />
+					</div>
+				</div>
+				<div class="row">
+				   <div class="col-md-6">
+				      <div class="checkbox">
+					     <label>
+						   <input type="checkbox" /> I Agree to tearms and conditions.
+						  </label>
+						</div>
+					</div>
+
+                   </div>
+				   <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
+
+		</div>
+</form>
+</div>
+
+
+</body>
